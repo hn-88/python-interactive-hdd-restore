@@ -8,6 +8,7 @@ replacement for `dd | pigz` and `gunzip | dd`).
 * Images are ordinary .gz files (multi-member gzip, like pigz produces), so
   they can also be restored on Linux with:  gunzip -c image.gz | dd of=/dev/sdX
 * Compression runs on all CPU cores.
+* Tested on Windows 11 ARM VM.
 
 Usage:
     python diskimage.py                       (interactive menu)
